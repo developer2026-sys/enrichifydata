@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Enrichify</title>
+  <meta name="description" content="Schedule a strategy session with Enrichify. Data enrichment, consumer intelligence, and custom web design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Enrichify home">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="7" height="7" rx="1.5" fill="#1B4FB5"/><rect x="2" y="12" width="7" height="7" rx="1.5" fill="#1B4FB5"/><rect x="2" y="22" width="7" height="7" rx="1.5" fill="#1B4FB5"/><rect x="12" y="2" width="7" height="7" rx="1.5" fill="#1B4FB5"/><rect x="12" y="12" width="7" height="7" rx="1.5" fill="#5B8CE0"/><rect x="22" y="2" width="7" height="7" rx="1.5" fill="#5B8CE0"/></svg>
+        Enrichify
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#capabilities">Capabilities</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="retargeting-engine.html">Retargeting Engine</a>
+        <a href="index.html#web-design">Web Design</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn--primary nav-cta">Schedule a Session</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width:720px;">
+      <div class="sec-head center">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Schedule a strategy session</h2>
+        <p>Tell us what you're working on. We'll follow up within one business day with a plan and next steps.</p>
+      </div>
+      <div class="panel" style="margin-top:36px; padding:36px;">
+        <div data-fs-success class="fs-msg fs-msg--success">Thanks. Your message is in. We'll follow up within one business day.</div>
+        <div data-fs-error class="fs-msg fs-msg--error"></div>
+
+        <form id="contact-form" action="https://formspree.io/f/xwvgzgkk" method="POST" style="display:flex; flex-direction:column; gap:18px;">
+          <input type="hidden" name="_subject" value="New Enrichify website inquiry">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
+          <div>
+            <label for="name" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" data-fs-field style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit;" placeholder="Your name">
+            <span data-fs-error="name"></span>
+          </div>
+          <div>
+            <label for="email" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" data-fs-field style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit;" placeholder="you@company.com">
+            <span data-fs-error="email"></span>
+          </div>
+          <div>
+            <label for="organization" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Organization</label>
+            <input type="text" id="organization" name="organization" autocomplete="organization" data-fs-field style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit;" placeholder="Company or organization name">
+            <span data-fs-error="organization"></span>
+          </div>
+          <div>
+            <label for="interest" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">What are you looking for?</label>
+            <select id="interest" name="interest" data-fs-field style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit; background:#fff;">
+              <option>Data Enrichment &amp; Appending</option>
+              <option>Predictive Scoring</option>
+              <option>IP Targeting Campaign</option>
+              <option>Retargeting Engine</option>
+              <option>Custom Website Design</option>
+              <option>Donor Intelligence</option>
+              <option>Something else</option>
+            </select>
+            <span data-fs-error="interest"></span>
+          </div>
+          <div>
+            <label for="message" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Message</label>
+            <textarea id="message" name="message" rows="4" required data-fs-field style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit; resize:vertical;" placeholder="Tell us about your project, goals, or questions"></textarea>
+            <span data-fs-error="message"></span>
+          </div>
+          <button type="submit" data-fs-submit-btn class="btn btn--primary" style="margin-top:8px; justify-content:center; border:0; cursor:pointer; font:inherit; font-weight:600;">Send Message</button>
+        </form>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <p style="color:var(--muted); font-size:0.9rem;">Or email us directly at <a href="mailto:rsmith@enrichifydata.com" style="color:var(--blue-deep); font-weight:600;">rsmith@enrichifydata.com</a></p>
+        <p style="color:var(--muted); font-size:0.9rem; margin-top:6px;"><a href="https://www.enrichifydata.com" style="color:var(--blue-deep); font-weight:600;">www.enrichifydata.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Enrichify Data. All rights reserved.</span>
+        <span>Intelligent Data. Smarter Growth.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', {
+      formElement: '#contact-form',
+      formId: 'xwvgzgkk',
+      data: {
+        page: function () { return window.location.href; },
+        referrer: function () { return document.referrer || undefined; }
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1.1.5" defer></script>
+</body>
+</html>
